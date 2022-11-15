@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Hanady GEBRAN</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro"> Welcome </a></li>
+							<li><a href="#pres"> &nbsp;&nbsp;&nbsp;About me </a></li>
+							<li><a href="#one" > &nbsp;&nbsp;&nbsp;Projects </a></li>						
+							<li><a href="#two"> &nbsp;&nbsp;&nbsp;Skills </a></li>
+							<li><a href="#three"> &nbsp;&nbsp;&nbsp;Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Hanady GEBRAN</h1>
+							<p>École Polytechnique and TUM master student</p>
+							<ul class="actions">
+								<li><a href="#pres" class="button scrolly">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Intro -->
+				<section id="pres" class="wrapper style2 fade-up">
+					<div class="inner">
+						<h2>About me</h2>
+						<p><span class="image left"><img src="images/me.jpeg" alt="" /></span>
+							Hi, I'm <strong> Hanady </strong>! <br> 
+							
+							Hello, I am Hanady !
+I am currently pursuing the <strong>Computer Sciences Master’s degree </strong>at <strong>Technical University of Munich</strong> (TUM) and am currently working on my second master’s thesis at <strong>Fraunhofer IKS </strong>focusing on quantum CNN supervised by Jeanette Lorenz. <strong>My expected graduation from TUM is by the end of March</strong>. 
+I finished my <strong>engineering studies</strong> in France last year at <strong>École Polytechnique</strong>. My master’s thesis tackled explainable AI, specifically "cognition-based clustering and its use in relevant descriptions", under the supervision of Jean-Louis Dessalles at <strong>École Telecom Paris</strong>. Throughout my experiences, I have been keen on developing my skills in artificial intelligence and have been involved in many areas: <strong>Robotics</strong> (solving the robotic reaching task using a spiking neural network), <strong>Quantum Computing</strong> (second master thesis), <strong>Cognitive Science</strong>(first master thesis), <strong>Theoretical AI</strong> (infinitely large transformer networks and their Laplace operators), and <strong>Mathematical dataset creation </strong>(creation of LEAN datasets <strong>commissioned by Meta</strong>, formerly Facebook). I have also worked on a practical software project in order to gain an understanding of technical skills required to develop a complete project.
+
+<p>You can find my resume <a href = "CV.pdf" class = "link" >  <b> here</b>  </a>  and further details about the projects I have worked on in this portfolio.</p>
+				</div>
+				</section>
+				<!-- One -->
+				<section id="one">
+					<section class="wrapper style3 spotlights">
+						<section>
+							<a href="#cognitive" class="image"><img src="images/telecom.png" width="16" height="30" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Cognition-based clustering and its use in relevant
+										descriptions</h2>
+										<p>This thesis aimed to consider <strong>clustering as a cognitive process</strong> and to exploit human reasoning to achieve it. The ultimate goal was to achieve optimal clustering with few examples and no parameters. To this end, I have relied on heuristic approaches beyond K-means, based on <strong>Kolmogorov complexity</strong> (which measures the intuitiveness of a feature the intuitiveness of a piece of information) and <strong>contrast</strong> (which compares an object to a given prototype), with the aim of mimicking human decision-making considerations.</p>
+										<p> You can see the full report <a href = "report/STAGE_3A_report.pdf" class = "link" >  <b> here.</b>  </a>  
+											<p>  <a class="button">Python</a> <a class="button">Pandas</a> <a class="button">Scikit-learn</a></p>
+								</div>
+							</div>
+						</section>
+
+						<section id="Meta">
+							<a href="#meta" class="image"><img src="images/meta.gif" width="16" height="30" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Formalizing mathematical statements in LEAN</h2>
+									<p>FAIR (Facebook AI Research) is in the midst of a race with Google and INRIA to determine the extent to which formal languages (such as LEAN) can be used to produce and prove mathematical statements. FAIR has therefore contacted leading grandes écoles to <strong>create mathematical datasets in LEAN</strong>. </p><p> I was part of the team at École Polytechnique and worked on <strong>International Mathematical Olympiad problems.</strong></p></div>
+									<p>  <a class="button">Lean</a> <a class="button">Git</a></p>
+								</div>
+						</section>
+
+
+						<section id="Robot">
+							<a href="robotics.html" class="image"><img src="images/robot.gif" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Solving the robotic reaching task using a spiking neural network</h2>
+									<p>The goal of this project was to solve a <strong>reaching task</strong> in the Neurorobotics platform using a manipulator robot and <strong>spiking neural networks</strong> (SNNs). </p><p>In each episode, a target point was randomly generated and the goal was to <strong>control the angles</strong> of the manipulator joints so that the end effector would reach that point. The observations were simulation ground truth data such as target pose, current joint angles, and velocities. 
+									</p><p>This was a joint project: we each tailored an RL algorithm to the SNN with an appropriate design to encode and decode the inputs and outputs: I chose TD3 and integrated it, then my partner coded A2C. </p>
+										<p>The deployment was as follows: RL container :  Training code + GRPC client; Backend containers : NRP backend (Gazebo, NRP, ROS) + GRPC server; Frontend container : REST API communication with NRP Backend + NRP UI on a localhost port (HTTP).</p>
+										<p>You can see the full report <a href = "report/CMLR_21_22_report.pdf" class = "link">  <b> here.</b>  </a>  
+									</p>
+									<p>  <a class="button">Python</a> <a class="button">Docker</a> <a class="button">Gazebo</a> <a class="button">NRP</a> <a class="button">LRZ cloud</a> <a class="button">Git</a></p>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+				<section class="wrapper style3 spotlights">
+
+					<section id="Energy">
+						<a href="#ampl" class="image"><img src="images/polytechnique.png" alt="" data-position="top center" /></a>
+						<div class="content">
+							<div class="inner">
+								<h2>Energy System Design in Europe:
+									A Multi-Objective Approach</h2>
+								<p>The objective of this project was to develop a comprehensive method for <strong>modeling renewable energy systems</strong> in order to achieve renewable energy production that meets all the energy needs of selected European countries. </p><p> The aim was to be realistic from the point of view of <strong>budget optimization</strong>, but also to avoid <strong>public opposition</strong>.  Moreover, in order to examine the interactions with a third objective dimension, another objective was the question of employment, i.e. to <strong>generate a maximum of jobs</strong> in the production of green energy.</p> <p> We worked in pairs on this project;  my main task was to collect data from several official European sites and to choose the objective functions and code them on top of a simple apriori model whereas my partner was mostly coding the other methods once we had a satisfactory model.</p>
+								<p> You can see the full report <a href = "report/DECISON_THEORY_report.pdf" class = "link">  <b> here.</b>  </a>  	
+								<p> You can download the zip file of the code submitted for this project  <a href = "code/ampl.zip" class = "link" >  <b> here.</b>  </a>
+								<p>  <a class="button">Ampl</a></p>
+							</div>
+						</div>
+					</section>
+
+					<section id="PVZ">
+						<a href="#pvz" class="image"><img src="images/pvz.gif" alt="" data-position="25% 25%" /></a>
+						<div class="content">
+							<div class="inner">
+								<h2>Plants vs. Zombies: Reinforcement learning to a tower defense game</h2>
+								<p>In a four-person team, we developed several <strong>reinforcement learning methods</strong> (policy gradient with or without actor critique module, Deep Q-Network and Double Deep Q-Network) and successfully trained agents to play the <strong>plant vs. zombie</strong> game we developed in a game engine, linked to an OpenAI gym environment.
+									We presented the <strong>superiority of policy-free methods </strong>for this environment and how hyperparameters and observation features can be manipulated to improve agent performance.</p>
+									<p>I worked mostly on the environment and the balance of the game.</p>
+									<p> You can see the full report <a href = "report/INF581_report.pdf" class = "link" >  <b> here.</b>  </a>  
+									<p> You can see the git repository submitted for this project   <a href = "https://github.com/inf581-pvz-anonymous/pvz_rl" class = "link" >  <b> here.</b>  </a>
+										<p>  <a class="button">Python</a> <a class="button">Pytorch</a> <a class="button">Git</a></p>
+						   
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section id="Software">
+						<a href="#software" class="image"><img src="images/software.jpeg" alt="" data-position="center center" /></a>
+						<div class="content">
+							<div class="inner">
+								<h2>Software project: delivery system</h2>
+								<p>The project aimed to build a <strong>delivery system </strong> with the following specifications: 
+									<li>Back-end: Spring, MongoDB, Java. </li>
+								<li>Front-end: React, Javascript. </li>
+							    <li> Embedded system: Python in a Raspberry Pi </li>
+							<li>Deployment: Docker.</li> </p> 
+							<p>I was in charge of the embedded system (solo) and the backend (team of 3), and I had a secondary role with the deployment. I was also in charge of presenting the project and doing a complete code walkthrough in front of the jury. 
+									<p> You can download the zip file of the code submitted for this project    <a href = "code/software.zip" class = "link">  <b> here.</b>  </a>
+							</div>
+							<p>  <a class="button">Java</a> <a class="button">Docker</a> <a class="button">MongoDB</a> <a class="button">Git</a></p>
+						</div>
+					</section>
+
+				</section>
+			
+				<section class="wrapper style3 spotlights">
+					<section id="Transformers">
+						<a href="#tum" class="image"><img src="images/tum.png"  alt="" data-position="25% 25%" /></a>
+						<div class="content">
+							<div class="inner">
+								<h2>Infinitely wide Transformer networks and their Laplace operators</h2>
+								<p>In collaboration with the TUM Mathematics Department and the Chair of Scientific Computing, I studied the relationship between the integral operator of kernels associated with an <strong>infinite-width network</strong> and the <strong>Laplace-Beltrami operator</strong> on the manifolds where the data lies; in addition to a small application which was a <strong>transformers on an IMDb dataset</strong>.</p>
+								<p> You can see the full report <a href = "report/IDP_report.pdf" class = "link" >  <b> here.</b>  </a>  
+									<p> You can download the ipynb file of the code submitted for this project    <a href = "code/NNGP_NTK_IMDb.ipynb" class = "link">  <b> here.</b>  </a>
+										<p>  <a class="button">Python</a> <a class="button">Jax</a><p></p>
+						   
+								</ul>
+							</div>
+						</div>
+					</section>
+				</section>
+			</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Skills and key courses.</h2>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>Skills</h3>
+									<ul>
+										<li> <strong>Programming languages:</strong> Python, Java, C++, Ampl, Lean, R. </li>
+										<li> <strong>DevOps:</strong> Git, Docker, CI/CD. </li>
+										<li> <strong>Data:</strong> SQL, MongoDB, Spark, Tableau. </li>
+										<li> <strong>Data Science and Machine Learning:</strong> PyTorch, Scikit-learn, Pandas, TensorFlow, Keras. </li>
+										<li> <strong>Quantum computing:</strong> Qiskit, Pennylane. </li>
+										<li> <strong>Robotics:</strong> Gazebo, Neurorobotics Platform. </li>
+										<li> <strong>Cloud:</strong> AWS. </li>
+									</ul>
+
+								</section>
+
+								<section>
+									<span class="icon solid major fa-book"></span>
+									<h3>Some courses taken at <a href = "report/Some_courses_polytechnique.pdf" class = "link" >  <b> Polytechnique </b> <a href = "report/transcript_tum.pdf" class = "link">  <b> & TUM. </b> </h3>
+									<ul>
+										<li><a href = "https://moodle.polytechnique.fr/enrol/index.php?id=9669" class = "link">  <b> INF442: Algorithm for Data Analysis in C++.</b></a> </li>
+										<li><a href = "https://moodle.polytechnique.fr/course/info.php?name=INF581-2020" class = "link">  <b> INF581: Advanced Machine Learning and Autonomous Agents (2020-2021)</b></a>  </li>
+										<li><a href = "https://moodle.polytechnique.fr/course/info.php?name=INF569-2022" class = "link">  <b> INF569: Decision theory, with applications to energy systems.</b>  </a>  </li>
+										<li><a href = "https://www.mirmi.tum.de/index.php?id=201" class = "link">  <b> IN2107: Seminar on Robotics Science and Systems Intelligence.</b>  </a>  The report for this course  <a href = "report/OPTIMAL_CONTROL_report.pdf" class = "link">  <b> here.</b>  </a></li>
+										<li><a href = "https://wwwmatthes.in.tum.de/pages/c9ulr7t9nrqs/Advanced-Topics-of-Software-Engineering" class = "link">  <b> IN2309: Advanced Topics of Software Engineering</b>  </a> </li>
+									
+										</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style2 fade-up">
+						<div class="inner">
+							<h2>Contact</h2>
+							<p>Please don’t hesitate to contact me! </p>
+							<div class="split style1">
+								<section>
+									<form
+										action="https://formspree.io/f/myyvnogo"
+										method="POST"
+									>
+										<label>
+										Your email:
+										<input type="email" name="email">
+										</label>
+										<label>
+										Your message:
+										<textarea name="message"></textarea>
+										</label>
+										<!-- your other form fields go here -->
+										<button type="submit">Send</button>
+								  </form>
+								  
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Email</h3>
+											<a href="#">gebranhanady@gmail.com</a>
+										</li>
+										<li>
+											<h3>LinkedIn</h3>
+												<a href="https://www.linkedin.com/in/hanady-gebran/">https://www.linkedin.com/in/hanady-gebran/</a> 
+										</li>
+										<li>
+											<h3>Resume</h3>
+											<a href="CV.pdf">CV</a>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>This website was built using the <a href="https://github.com/html5up-nsm-templates/hyperspace">Hyperspace</a> template. </li><li> The image for the main page was created by an <a href="https://creator.nightcafe.studio/create">AI art generator.</a> </li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
