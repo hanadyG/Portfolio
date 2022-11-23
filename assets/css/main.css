@@ -130,7 +130,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1250px) {
 
 			body, input, select, textarea {
 				font-size: 12pt;
@@ -814,7 +814,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1250px) {
 
 			.row {
 				display: flex;
@@ -3181,7 +3181,7 @@ input, select, textarea {
 
 			}
 
-			@media screen and (max-width: 1280px) {
+			@media screen and (max-width: 1250px) {
 
 				.wrapper > .inner {
 					width: 100%;
@@ -3274,7 +3274,7 @@ input, select, textarea {
 				height: 100vh;
 			}
 
-			@media screen and (max-width: 1280px) {
+			@media screen and (max-width: 1250px) {
 
 				.wrapper.fullscreen {
 					min-height: calc(100vh - 2.5em);
@@ -3461,7 +3461,7 @@ input, select, textarea {
 		margin-left: 18em;
 	}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1250px) {
 
 			#sidebar + #wrapper {
 				margin-left: 0;
@@ -3488,7 +3488,7 @@ input, select, textarea {
 		margin-left: 18em;
 	}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1250px) {
 
 			#sidebar + #wrapper + #footer {
 				margin-left: 0;
@@ -3796,7 +3796,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1250px) {
 
 			#sidebar {
 				height: 3.5em;
@@ -3890,7 +3890,7 @@ input, select, textarea {
 
 			}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1250px) {
 
 			#intro {
 				background-attachment: fixed;
